@@ -1,0 +1,61 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-evenly;
+  margin: 40px auto;
+  width: 90vw;
+  height: 760px;
+  column-gap: 15px;
+}
+
+.box-card {
+  position: relative;
+  width: 19%;
+  padding: 0;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.box-image {
+  border-radius: 8px;
+  height: 100%;
+  overflow: hidden;
+}
+.box-image img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+.box-hover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.35);
+  opacity: 0;
+}
+.box-card:hover .box-hover {
+  opacity: 1;
+}
+.box-sm {
+  height: 280px;
+}
+.box-md {
+  height: 320px;
+}
+.box-lg {
+  height: 420px;
+}
+/* Re-order items into 3 rows */
+.box-card:nth-of-type(5n+1) { order: 1; }
+.box-card:nth-of-type(5n+2) { order: 2; }
+.box-card:nth-of-type(5n+3) { order: 3; }
+.box-card:nth-of-type(5n+4) { order: 4; }
+.box-card:nth-of-type(5n)   { order: 5; }
