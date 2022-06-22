@@ -1,5 +1,5 @@
 .navigation_bar {
-    margin-top: 1vh;
+    position: fixed;
     border: none;
     height: 10vh;
     width: 98vw;
@@ -187,4 +187,34 @@
 
 .small_icon:hover {
     background-color: rgb(237, 237, 234);
+}
+
+.help {
+    position: fixed;
+    z-index: 1;
+    border: none;
+    height: 10vh;
+    width: 10vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+    flex-direction: row;
+    background-color: white;
+    padding: 2px;
+    margin-top: 80vh;
+    margin-left: 85vw;
+}
+
+.help_button {
+    height: 8vh;
+    width: 5vw;
+    background-color: rgb(237, 237, 234);
+    color:grey;
+    font-size: 6vh;
+    border-radius: 25px;
+    border: transparent;
+}
+
+.help_button:hover {
+    background-color: rgb(200, 200, 198);
 }
