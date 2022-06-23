@@ -4,10 +4,65 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/724b9e1e3d.js" crossorigin="anonymous"></script>
   <title>Clon Pinterest</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+    <div class="contenedor">
+      <div class="left">
+
+      </div>
+      <div class="right">
+        <div class="top">
+          <div class="menu">
+           <img class="dot" src="https://cdn-icons-png.flaticon.com/512/57/57013.png" alt="">
+          </div>
+          <div class="enviar">
+            <img class="up" src="data:image/png;base64,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" alt="">
+          </div>
+          <div class="me_gusta">
+            <img class="love" src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="">
+          </div>
+          <div class="perfil">
+            <strong>Perfil</strong>
+          </div>
+          <div class="Arrow_0">
+            <img class="arrow_top" src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="">
+          </div>
+          <div class="guardar">
+            <div class="save"><strong>Guardar</strong></div>
+          </div>
+
+        </div>
+        <div class="upload">
+            <h1>Titulo de la imagen</h1>
+        </div>
+        <span></span>
+        <div class="comment">
+            <div class="comentarios">
+                <div>
+                    <h2>Comentarios</h2>
+                </div>
+                <div>
+                    <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="input-comment">
+            <div class="avatar">
+                <img class="_av" src="https://i.pinimg.com/originals/8b/6e/c6/8b6ec60427f9b17c1d9aaf4c415babe3.png" alt="">
+            </div>
+            <div class="input_box">
+                <input class="box" type="text" placeholder="Añade un comentario">
+                <div class="emoji_box">
+                    <img class="emoji" src="https://w7.pngwing.com/pngs/528/425/png-transparent-smile-emoji-happy-happiness-happy-face-yellow-smiling-message-social-networks-whatsapp.png" alt="">
+                </div>
+
+            </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
