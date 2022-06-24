@@ -189,6 +189,18 @@ body{
   display: flex;
   flex-direction: row;
 }
+.top-right span {
+  font-size: 18px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+}
+.top-right span:hover {
+  background-color: #f8f8f8;
+}
 .top-left {
   width: 60%;
   display: flex;
@@ -196,31 +208,11 @@ body{
   justify-content: flex-end;
   align-items: center;
 }
-.menu .dot {
-    display: flex;
-    width: 30px;
-    height: 30px;
-    padding: 0 10px 0 10px;
-    border-radius: 50%;
-}
-.enviar .up{
-    width: 30px;
-    height: 30px;
-    padding: 0 10px 0 10px;
-}
-.me_gusta .love{
-    width: 30px;
-    height: 30px;
-    padding: 0 10px 0 10px;
-}
+
 .perfil{
     font-size: large;
 }
-.arrow_top{
-    width: 20px;
-    height: 20px;
-    margin: 0 5px 0 5px;
-}
+
 .guardar{
     display: flex;
     justify-content: center;
@@ -444,6 +436,7 @@ h2{
   font-weight: bolder;
   border-radius: 50%;
   border: transparent;
+  cursor: pointer;
 }
 .small_icon i {
   vertical-align: middle;
