@@ -197,9 +197,10 @@ body{
   display: inline-block;
   text-align: center;
   border-radius: 50%;
+  transition: all 0.3s ease;
 }
 .top-right span:hover {
-  background-color: #f8f8f8;
+  background-color: #dcdcdc;
 }
 .top-left {
   width: 60%;
